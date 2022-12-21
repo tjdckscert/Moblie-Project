@@ -2,6 +2,8 @@ package com.example.test;
 
 import android.graphics.Bitmap;
 
+import java.util.ArrayList;
+
 public class SampleData {
     private Bitmap poster;
     private String number;
@@ -21,4 +23,5 @@ public class SampleData {
     }
         public String getName() { return this.name; }
         public String getAmount() { return amount; }
+
 }

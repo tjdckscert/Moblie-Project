@@ -51,4 +51,8 @@ public class MyAdapter extends BaseAdapter {
 
         return view;
     }
+    public void setList(ArrayList<SampleData> data){
+        this.sample = data;
+        notifyDataSetChanged();
+    }
 }

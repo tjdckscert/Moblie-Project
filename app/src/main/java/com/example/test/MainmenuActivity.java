@@ -87,10 +87,11 @@ public class MainmenuActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView parent, View v, int position, long id){
-                Bitmap img = DataList.get(position).getPoster();
-                String pid  = DataList.get(position).getName();
-                String number  = DataList.get(position).getNumber();
-                String amount  = DataList.get(position).getAmount();
+                SampleData clickItem = (SampleData) listView.getAdapter().getItem(position);
+                Bitmap img = clickItem.getPoster();
+                String pid  = clickItem.getName();
+                String number  = clickItem.getNumber();
+                String amount  = clickItem.getAmount();
 
                 Log.d("Parsing","position : "+position);
                 Log.d("Parsing","pid : "+pid);
